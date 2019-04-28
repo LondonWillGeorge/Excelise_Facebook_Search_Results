@@ -9,15 +9,22 @@ Excel or OpenOffice etc freeware software which can save in .xlsx format,
 
 Know how to install Python packages and set up virtual environment, run a Python app in console (can google this fairly easily maybe)
 
-The source workbook needs to be filled with search results from Fb.
+The source workbook needs to be filled with search results from Fb, as detailed below.
 
-NB this was written asap at work (not yet software dev when wrote this), so at first, didn't even encapsulate in functions, let alone 
+The source workbook and result destination Excel format file both need to be in same folder as the Python file Convert_Manual_To_Table.py, you should edit the file names and the Excel sheet name you want at the end of the code in this file.
+
+### 2nd Python file
+This is very different, and uses the selenium package for Python to login to fb and automatically send messages. It's unfinished, and bit dangerous as likely to get the fb account blocked quickly. I may improve on it in future, or if anyone would like to help, thanks let me know. I think fb (effectively at least) has some kind of points system going on for unwanted behaviour on any one account, and when you reach certain level, account is blocked temporarily, or at some higher point probably permanently banned. But presumably, if you can get selenium to behave within the boundaries of what a 'normal user' may do (at most extreme end of normal) then qed it won't be banned, so becomes a question of testing where the boundary is. First thing is getting selenium to put delays in so it doesn't look faster than a human.
+https://www.scrapehero.com/how-to-prevent-getting-blacklisted-while-scraping/ seems to be pretty informative on such things.
+
+### Main Python file structure
+NB this main Excel file was written asap at work (not yet software dev when wrote this), so at first, didn't even encapsulate in functions, let alone 
 as a class. Just wrote the whole thing out until it worked in one ever-expanding script.
 
 Then later I attempted to break into a few functions, and encapsulated these in one class, so though the object model is a bit makeshift
 and not planned from the start, but it's potentially extendible.
 
-# How to do searches for specific groups of people in FB?
+## How to do searches for specific groups of people in FB?
 NB you can't get these kind of search results with the FB API, it won't let you, but these are all URLs you can just put into public
 website, returning publicly listed information which everyone has consented to share publicly on Fb.
 
@@ -64,12 +71,5 @@ NB to run this app from the Windows command prompt, need to activate virtual env
 Type facebookenv\Scripts\activate at command prompt with back slashes
 otherwise the virtual environment only loaded packages won't be found and won't run!
 
-# Next Steps
-Using the Selenium package for Python, you could extract this data automatically without copying and pasting, but then you have to deal
-with fb's extremely sophisticated 'suspicious behaviour' detection algorithms. Fb cannot detect selenium automatically, but the fb
-account you use can get temporarily blocked quite quickly if you use selenium to: do anything too fast, 
-access URLs in succession which 'normal users' wouldn't access directly, message too many people you don't know...very long and complex
-list probably.
-
-Have a draft selenium python file as part of this, use only with a test fb login (create new email and login might be best), you will
-get the account blocked pretty quickly and easily.
+## Next Steps
+Using selenium, you could extract this data automatically without copying and pasting, might have danger of account blocking again.
