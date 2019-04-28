@@ -2,16 +2,19 @@
 By pasting the results list from a people search from FB into Excel, this will reformat to a neat table in new Excel workbook.
 
 To use this you need:
+
 To download and install Python 3.7 or later
-Excel or OpenOffice etc freeware software which can save in .xlsx format
+
+Excel or OpenOffice etc freeware software which can save in .xlsx format, 
+
 Know how to install Python packages and set up virtual environment, run a Python app in console (can google this fairly easily maybe)
 
 The source workbook needs to be filled with search results from Fb.
 
-NB this was written asap at work (not yet software dev when wrote this), so didn't even encapsulate in functions, let alone as a class.
-Just wrote the whole thing out until it worked in one ever-expanding script.
+NB this was written asap at work (not yet software dev when wrote this), so at first, didn't even encapsulate in functions, let alone 
+as a class. Just wrote the whole thing out until it worked in one ever-expanding script.
 
-Then have attempted to break into a few functions, and encapsulated these in one class, so though the object model is a bit makeshift
+Then later I attempted to break into a few functions, and encapsulated these in one class, so though the object model is a bit makeshift
 and not planned from the start, but it's potentially extendible.
 
 # How to do searches for specific groups of people in FB?
