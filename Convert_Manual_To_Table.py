@@ -390,7 +390,7 @@ class FbResults(object):
         else:
             self.result_book.save(self.dirpath + '\\' + new_outfile)
 
-nurses = FbResults('\FB_SampleSource.xlsx', '\FB_Processed_Search_Results.xlsx', 'NursesAndHCAs')
+nurses = FbResults('FB_SampleSource.xlsx', 'FB_Processed_Search_Results.xlsx', 'NursesAndHCAs')
 data_list = nurses.data_to_List()
 nurses.List_to_workbook(data_list)
 nurses.summarise_sheet()
