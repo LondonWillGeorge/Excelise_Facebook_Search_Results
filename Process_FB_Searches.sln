@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Process_FB_Searches", "Process_FB_Searches\Process_FB_Searches.pyproj", "{BA084330-2894-4F36-9A89-7A052D3D8B46}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Process_FB_Searches", "Process_FB_Searches.pyproj", "{BA084330-2894-4F36-9A89-7A052D3D8B46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +18,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EEE78F13-55E8-42DA-9523-E8FAB044635A}
+		SolutionGuid = {B47AB1E6-0DDE-488D-88FB-C427D2E148BB}
 	EndGlobalSection
 EndGlobal
