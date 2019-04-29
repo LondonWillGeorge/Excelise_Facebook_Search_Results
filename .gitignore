@@ -9,6 +9,9 @@ env/
 # Trying get rid of tracked folder and subfile deletion from when files were moved, Git still tracking deletion as below file path, gitignore can't fix this I think:
 Process_FB_Searches/
 
+# this not in standard VS gitignore on Github(!)
+*.sln
+
 # User-specific files
 *.suo
 *.user
